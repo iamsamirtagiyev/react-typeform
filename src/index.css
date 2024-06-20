@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+  *{
+    &::-webkit-scrollbar{ @apply w-1}
+    &::-webkit-scrollbar-thumb{ @apply bg-zinc-500 rounded-full}
+  }
+
+  body{ @apply bg-black text-white}
+
+  input[type='radio']:checked + label{
+    @apply bg-zinc-700;
+    span{
+      @apply border-zinc-700 outline-zinc-500
+    }
+  }
+
+  .label{
+    @apply text-3xl font-medium capitalize
+  }
+}
